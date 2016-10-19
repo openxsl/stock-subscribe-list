@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="demo.xsl"?>
+<root>
+    <env>
+        <domain>local</domain>
+    </env>
+    <data>
+        <stock-subscribe-list>
+            <i>
+                <email>45611645@qq.com</email>
+                <symbol>gild</symbol>
+                <cost>77.45</cost>
+                <amount>130</amount>
+                <lte>1</lte>
+                <gte>85</gte>
+                <id>1475761674591</id>
+                <now>73.41</now>
+                <percent>-0.05216268560361532</percent>
+                <updateTime>2016-10-19 08:19:21</updateTime>
+            </i>
+            <i>
+                <email>45611645@qq.com</email>
+                <symbol>nvo</symbol>
+                <cost>46.290</cost>
+                <amount>1000</amount>
+                <lte>1</lte>
+                <gte>50</gte>
+                <id>1476269678692</id>
+                <now>40.56</now>
+                <percent>-0.12378483473752423</percent>
+                <updateTime>2016-10-19 08:28:04</updateTime>
+            </i>
+            <i>
+                <email>45611645@qq.com</email>
+                <symbol>fmx</symbol>
+                <cost>46.290</cost>
+                <amount>1000</amount>
+                <lte>1</lte>
+                <gte>50</gte>
+                <id>1476269678692</id>
+                <now>40.56</now>
+                <percent>0.12378483473752423</percent>
+                <updateTime>2016-10-19 08:28:04</updateTime>
+            </i>
+        </stock-subscribe-list>
+    </data>
+
+</root>
+

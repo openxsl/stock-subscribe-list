@@ -6,12 +6,46 @@
         <ul>
             <xsl:for-each select="data/stock-subscribe-list/i">
                 <li>
-                    <xsl:for-each select="./*">
+
                         <p>
-                            <label><xsl:value-of select="name(.)"/></label>
-                            <xsl:value-of select="."/>
+                            <label>Email</label>
+                            <xsl:value-of select="email"/>
                         </p>
-                            </xsl:for-each>
+                        <p>
+                            <label>Symbol</label>
+                            <xsl:value-of select="symbol"/>
+                        </p>
+                        <p>
+                            <label>Now</label>
+                            <xsl:value-of select="now"/>
+                        </p>
+                        <p>
+                            <label>Cost</label>
+                            <xsl:value-of select="cost"/>
+                        </p>
+                        <p>
+                            <label>Percent</label>
+                            <font>
+                                <xsl:attribute name="color">
+                                    <xsl:choose>
+                                        <xsl:when test="percent &gt; 0">red</xsl:when>
+                                        <xsl:otherwise>green</xsl:otherwise>
+                                    </xsl:choose>
+                                </xsl:attribute>
+                            <xsl:value-of select="percent"/>
+                            </font>
+                        </p>
+                        <p>
+                            <label>Time</label>
+                            <xsl:value-of select="updateTime"/>
+                        </p>
+                        <p>
+                            <label>Range</label>
+                            <xsl:value-of select="lte"/>
+                            &lt; = &gt;
+                            <xsl:value-of select="gte"/>
+                        </p>
+
 
                 </li>
             </xsl:for-each>
