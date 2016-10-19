@@ -1,12 +1,36 @@
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="demo.xsl"?>
 <root>
-  <env>
-    <domain>local</domain>
-  </env>
-  <data>
-    <img-slider>
-<i>123</i></img-slider>
-  </data>
+    <env>
+        <domain>local</domain>
+    </env>
+    <data>
+        <stock-subscribe-list>
+            <i>
+                <email>strong notebook</email>
+                <symbol>screen</symbol>
+                <cost>472.58</cost>
+                <amount>4</amount>
+                <lte>5566.66</lte>
+                <gte>6643.28</gte>
+                <id>88414</id>
+                <now>323.52</now>
+                <percent>0.82</percent>
+                <updateTime>2016.10.18 12:00</updateTime>
+            </i>
+            <i>
+                <email>strong notebook</email>
+                <symbol>screen</symbol>
+                <cost>472.58</cost>
+                <amount>4</amount>
+                <lte>5566.66</lte>
+                <gte>6643.28</gte>
+                <id>88414</id>
+                <now>323.52</now>
+                <percent>0.82</percent>
+                <updateTime>2016.10.18 12:00</updateTime>
+            </i>
+        </stock-subscribe-list>
+    </data>
 
 </root>
