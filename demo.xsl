@@ -7,7 +7,8 @@
       <head>
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
         <title>stock-subscribe-list Demo</title>
-        <link rel="stylesheet" type="text/css" href="//openxsl.com/css/ea.css" />
+        <link rel="stylesheet" type="text/css" href="//openxsl.com/js/require.js" />
+        <link rel="stylesheet" type="text/css" href="//openxsl.com/css/normalize.css" />
         <link rel="stylesheet" type="text/css" href="asset/index.css" />
 
         <script src="//openxsl.com/js/require.js"></script>
