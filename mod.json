@@ -1,0 +1,6 @@
+{
+  "name": "stock-subscribe-list",
+  "version": "1.0.0",
+  "apiDependencies": ["stock-subscribe-list"]
+}
+
