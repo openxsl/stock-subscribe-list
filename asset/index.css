@@ -1,5 +1,6 @@
 .oxmod-stock-subscribe-list {
   /* CSS */
+  margin-bottom: 10px;
 }
 .oxmod-stock-subscribe-list ul,
 .oxmod-stock-subscribe-list li,
@@ -14,5 +15,28 @@
 .oxmod-stock-subscribe-list li label {
   display: inline-block;
   width: 120px;
+  color: #999;
+}
+.oxmod-stock-subscribe-list table {
+  border-bottom: solid 1px #eee;
+  border-top: solid 1px #eee;
+  width: 100%;
+}
+.oxmod-stock-subscribe-list table th {
+  line-height: 2;
+}
+.oxmod-stock-subscribe-list table td {
+  padding: 2px 3px;
+  border-top: solid 1px #eee;
+  color: #555;
+}
+.oxmod-stock-subscribe-list table .base sub {
+  color: #999;
+}
+.oxmod-stock-subscribe-list table .base big {
+  color: #333;
+  text-transform: uppercase;
+}
+.oxmod-stock-subscribe-list table .base small {
   color: #999;
 }

@@ -3,6 +3,49 @@
     <xsl:template match="/root" name="stock-subscribe-list">
     <!-- className 'J_OXMod' required  -->
     <div class="J_OXMod oxmod-stock-subscribe-list" ox-mod="stock-subscribe-list">
+        <table cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Base</th>
+                    <th>Now</th>
+                    <th>Percent</th>
+                    <th>Time</th>
+                    <th>Range</th>
+                </tr>
+            </thead>
+            <tbody>
+                <xsl:for-each select="data/stock-subscribe-list/i">
+                    <tr>
+                        <td class="base" align="left">
+                            <big><xsl:value-of select="symbol"/></big>&#160;<sub><xsl:value-of select="cost"/></sub>
+                            <br/>
+                            <small>
+                            <xsl:value-of select="email"/>
+                            </small>
+                        </td>
+                        <td align="center"><xsl:value-of select="now"/></td>
+                        <td align="center">
+                            <font>
+                                <xsl:attribute name="color">
+                                    <xsl:choose>
+                                        <xsl:when test="percent &gt; 0">red</xsl:when>
+                                        <xsl:otherwise>green</xsl:otherwise>
+                                    </xsl:choose>
+                                </xsl:attribute>
+                                <xsl:value-of select="format-number(percent,'0.00%')"/>
+                            </font>
+                        </td>
+                        <td align="center">
+                            <xsl:value-of select="substring(updateTime,6,11)"/>
+                        </td>
+                        <td align="center">
+                            &lt;<xsl:value-of select="lte"/>,<xsl:value-of select="gte"/>&gt;
+                        </td>
+                    </tr>
+                        </xsl:for-each>
+            </tbody>
+        </table>
+        <!--
         <ul>
             <xsl:for-each select="data/stock-subscribe-list/i">
                 <li>
@@ -50,6 +93,7 @@
                 </li>
             </xsl:for-each>
         </ul>
+        -->
     </div>
     </xsl:template>
 
