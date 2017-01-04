@@ -7,26 +7,25 @@
       <head>
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
         <title>stock-subscribe-list Demo</title>
-        <link rel="stylesheet" type="text/css" href="//openxsl.com/js/require.js" />
-        <link rel="stylesheet" type="text/css" href="//openxsl.com/css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="https://oxm1.cc/css/ea.css" />
         <link rel="stylesheet" type="text/css" href="asset/index.css" />
-
-        <script src="//openxsl.com/js/require.js"></script>
+        <script src="https://oxm1.cc/js/require.js"></script>
       </head>
       <body>
         <div class="layout">
-          <xsl:call-template name="stock-subscribe-list" />
+          <xsl:call-template name="openxsl.stock-subscribe-list" />
         </div>
         <script><![CDATA[
           require.config({
-          paths: {
-          zepto: '//openxsl.com/js/zepto.min',
-          mustache: '//openxsl.com/js/mustache'
-          }
+            paths: {
+              zepto: 'https://oxm1.cc/js/zepto.min',
+              mustache: 'https://oxm1.cc/js/mustache',
+              oxjs:'https://oxm1.cc/js/oxjs'
+            },
+            packages:[{name:"oxm",location:'https://oxm1.cc/oxm'}]
           });
-          require(['zepto','asset/index'],function(undefine,Mod){
+          require(['zepto','oxjs','asset/index'],function(undefine,oxjs,Mod){
           Mod && Mod.init && Mod.init($('.J_OXMod'));
-
           })
         ]]></script>
       </body>

@@ -1,6 +1,6 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-    <xsl:template match="/root" name="stock-subscribe-list">
+    <xsl:template match="/root" name="openxsl.stock-subscribe-list">
     <!-- className 'J_OXMod' required  -->
     <div class="J_OXMod oxmod-stock-subscribe-list" ox-mod="stock-subscribe-list">
         <table cellpadding="0" cellspacing="0">
